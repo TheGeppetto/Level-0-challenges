@@ -5,8 +5,9 @@ def common_characters(input_string1, input_string2):
     
     for x in input_string1:
         if x in input_string2:
-            common_characters_list.append(x)
+            if x not in common_characters_list:
+                common_characters_list.append(x)
             
-    return "Common Letters: " + ", ".join(str(i) for i in common_characters_list)
+    return "Common Letters: " + ", ".join(i for i in common_characters_list)
 
-print(common_characters("House", "Homputers"))
+print(common_characters("Househ", "Homputersh"))
