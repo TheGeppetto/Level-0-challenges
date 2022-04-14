@@ -5,6 +5,6 @@ def get_vowel(input_string):
         if i in ["a","e","i","o","u"]:
             if i not in vowel_list:
                 vowel_list.append(i)
-    return "Vowels: " + ", ".join(str(i) for i in vowel_list)
+    return "Vowels: " + ", ".join(i for i in vowel_list)
 
 print((get_vowel("Umuzi")))
