@@ -9,6 +9,6 @@ def convert_to_hours_and_minutes(number_of_minutes):
         minute_plural = " minute"
     else:
         minute_plural = " minutes"
-    return  str(hours) + hour_plural + " ," + str(remainder_minutes) + minute_plural
+    return  f"{hours}{hour_plural},{remainder_minutes}{minute_plural}"
 
 print(convert_to_hours_and_minutes(266))
